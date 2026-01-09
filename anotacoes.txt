@@ -1,0 +1,20 @@
+Helmet
+
+- O Helmet é um middleware de segurança do Express. Ele não protege tudo, mas fecha várias brechas comuns automaticamente.
+
+- O que ele faz na prática? Ele configura headers HTTP de segurança no seu servidor.
+
+- Exemplos do que ele ajuda a evitar: XSS (Cross-Site Scripting), Clickjacking, Vazamento de informações do servidor, Uso indevido de recursos por outros sites
+
+
+CSRF
+
+- CSRF é um tipo de ataque: O usuário está logado no seu site, Ele entra em outro site malicioso, Esse site faz uma requisição escondida para o seu backend, O navegador envia os cookies automaticamente, Seu servidor acha que foi o usuário.
+
+Como se proteger de CSRF?
+
+- A proteção mais comum é usar CSRF Token.
+
+Como funciona: O servidor gera um token único, Envia para o formulário, Quando o formulário volta, o token é conferido, Se não tiver token → requisição bloqueada.
+
+OBS: O Helmet é para segurança da aplicação, portanto, caso você esteja com um sistema ainda em desenvolvimento, usando urls como "127.0.0.1", "localhost" ou até um servidor com IP externo, sem usar SSL (https), é recomendável desativá-lo. Ele pode bloquear importação de scripts e arquivos de CSS. Caso ocorra erros ao importar o bundle.js, arquivos de CDN (como bootstrap, por exemplo) ou CSS, basta desativar o helmet para correção. Isso só ocorrerá em sistemas sem SSL (sem https na URL).
