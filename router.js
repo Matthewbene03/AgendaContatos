@@ -5,20 +5,14 @@ const router = express.Router();
 
 //Importa os controller que a aplicação vai ter
 const homeController = require("./src/controller/homeController");
-const testeController = require("./src/controller/testeController");
-const teste2Controller = require("./src/controller/teste2Controller");
+const loginController = require("./src/controller/loginController");
 
 //Rotas para o homeController
 router.get("/", homeController.paginaPrincipal);
 router.post("/", homeController.tratarFormulario);
 
-//Rotas para o testeController
+//Rotas de login
+router.get("/login/", loginController.paginaLogin);
 
-router.get("/testes", testeController.paginaPrincipal);
-router.get("/testes/:idUser", testeController.paginaPrincipalId);
-
-//Rotas para o teste2Controller
-
-router.get("/testes2", teste2Controller.paginaPrincipal);
 
 module.exports = router;

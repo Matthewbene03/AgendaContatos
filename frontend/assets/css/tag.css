@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+h1, h2, h3, th{
+    font-size: 30px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+p, td, label{
+    color: black;
+    font-size: 18px;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+
+    transition: border-bottom 0.1s ease;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
