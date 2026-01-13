@@ -4,9 +4,11 @@ module.exports.meuMiddlewares = (req, res, next) =>{
 };
 
 module.exports.checkCsrfError = (err, req, res, next) =>{ //Criando middlewares para verificar error de csrf
-    if(err && err.code === "EBADCSRFTOKEN"){
+    if(err){
         return res.render("404.ejs");
     }
+
+    next();
 };
 
 module.exports.csrfMiddeleware = (req, res, next) =>{ //Criando middlewares para criar token para os formulários
