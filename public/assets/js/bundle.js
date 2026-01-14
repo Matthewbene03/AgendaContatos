@@ -26161,10 +26161,6 @@ div.conteudoAgenda h2#agenda{
 
 /*Style do error*/
 
-div.div_errorOff{
-    display: none;
-}
-
 div.div_error {
     display: flex;
     flex-direction: row;
@@ -26184,7 +26180,28 @@ div.div_error {
 
 div.div_error p {
     color: rgb(70, 0, 0);
-    ;
+}
+
+/*Style do success*/
+
+div.div_success {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    justify-content: left;
+
+    background-color: rgb(57, 180, 19);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 25%;
+    padding-left: 10px;
+    height: 70px;
+}
+
+div.div_success p {
+    color: rgb(17, 91, 2);
 }
 
 /*Style da tabela*/
@@ -26200,7 +26217,7 @@ tr th, tr td {
     border-bottom: 2px solid rgb(189, 189, 189);
     font-size: 18px;
     padding: 15px 0px;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA,+BAA+B;AAC/B;;IAEI,aAAa;;IAEb,0BAA0B;IAC1B,SAAS;;IAET,WAAW;IACX,gBAAgB;AACpB;;AAEA,4BAA4B;AAC5B;;IAEI,kBAAkB;IAClB,eAAe;;IAEf,aAAa;IACb,iBAAiB;IACjB,sBAAsB;IACtB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;AACnB;;AAEA,iBAAiB;;AAEjB;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,iBAAiB;;IAEjB,mBAAmB;IACnB,qBAAqB;;IAErB,oCAAoC;IACpC,wCAAwC;IACxC,mBAAmB;IACnB,kBAAkB;IAClB,eAAe;IACf,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,oBAAoB;;AAExB;;AAEA,kBAAkB;AAClB;IACI,kBAAkB;IAClB,eAAe;IACf,yBAAyB;;AAE7B;;AAEA;IACI,wCAAwC;IACxC,2CAA2C;IAC3C,eAAe;IACf,iBAAiB;AACrB","sourcesContent":["/*Style do container principal*/\r\nsection.container {\r\n\r\n    display: grid;\r\n\r\n    grid-template-columns: 1fr;\r\n    gap: 30px;\r\n\r\n    width: 100%;\r\n    margin: 50px 0px;\r\n}\r\n\r\n/*Style do titulo da agenda*/\r\ndiv.conteudoAgenda {\r\n\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n\r\ndiv.conteudoAgenda h2#agenda{\r\n    font-size: 40px;\r\n}\r\n\r\n/*Style do error*/\r\n\r\ndiv.div_errorOff{\r\n    display: none;\r\n}\r\n\r\ndiv.div_error {\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n\r\n    align-items: center;\r\n    justify-content: left;\r\n\r\n    background-color: rgb(255, 149, 149);\r\n    /*border: 2px solid rgb(255, 149, 149);*/\r\n    border-radius: 10px;\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n    padding-left: 10px;\r\n    height: 70px;\r\n}\r\n\r\ndiv.div_error p {\r\n    color: rgb(70, 0, 0);\r\n    ;\r\n}\r\n\r\n/*Style da tabela*/\r\ntable {\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n    border-collapse: collapse;\r\n\r\n}\r\n\r\ntr th, tr td {\r\n    border-top: 2px solid rgb(189, 189, 189);\r\n    border-bottom: 2px solid rgb(189, 189, 189);\r\n    font-size: 18px;\r\n    padding: 15px 0px;\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA,+BAA+B;AAC/B;;IAEI,aAAa;;IAEb,0BAA0B;IAC1B,SAAS;;IAET,WAAW;IACX,gBAAgB;AACpB;;AAEA,4BAA4B;AAC5B;;IAEI,kBAAkB;IAClB,eAAe;;IAEf,aAAa;IACb,iBAAiB;IACjB,sBAAsB;IACtB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;AACnB;;AAEA,iBAAiB;;AAEjB;IACI,aAAa;IACb,mBAAmB;IACnB,iBAAiB;;IAEjB,mBAAmB;IACnB,qBAAqB;;IAErB,oCAAoC;IACpC,wCAAwC;IACxC,mBAAmB;IACnB,kBAAkB;IAClB,eAAe;IACf,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,oBAAoB;AACxB;;AAEA,mBAAmB;;AAEnB;IACI,aAAa;IACb,mBAAmB;IACnB,iBAAiB;;IAEjB,mBAAmB;IACnB,qBAAqB;;IAErB,kCAAkC;IAClC,mBAAmB;IACnB,kBAAkB;IAClB,eAAe;IACf,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,qBAAqB;AACzB;;AAEA,kBAAkB;AAClB;IACI,kBAAkB;IAClB,eAAe;IACf,yBAAyB;;AAE7B;;AAEA;IACI,wCAAwC;IACxC,2CAA2C;IAC3C,eAAe;IACf,iBAAiB;AACrB","sourcesContent":["/*Style do container principal*/\r\nsection.container {\r\n\r\n    display: grid;\r\n\r\n    grid-template-columns: 1fr;\r\n    gap: 30px;\r\n\r\n    width: 100%;\r\n    margin: 50px 0px;\r\n}\r\n\r\n/*Style do titulo da agenda*/\r\ndiv.conteudoAgenda {\r\n\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n\r\ndiv.conteudoAgenda h2#agenda{\r\n    font-size: 40px;\r\n}\r\n\r\n/*Style do error*/\r\n\r\ndiv.div_error {\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n\r\n    align-items: center;\r\n    justify-content: left;\r\n\r\n    background-color: rgb(255, 149, 149);\r\n    /*border: 2px solid rgb(255, 149, 149);*/\r\n    border-radius: 10px;\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n    padding-left: 10px;\r\n    height: 70px;\r\n}\r\n\r\ndiv.div_error p {\r\n    color: rgb(70, 0, 0);\r\n}\r\n\r\n/*Style do success*/\r\n\r\ndiv.div_success {\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n\r\n    align-items: center;\r\n    justify-content: left;\r\n\r\n    background-color: rgb(57, 180, 19);\r\n    border-radius: 10px;\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n    padding-left: 10px;\r\n    height: 70px;\r\n}\r\n\r\ndiv.div_success p {\r\n    color: rgb(17, 91, 2);\r\n}\r\n\r\n/*Style da tabela*/\r\ntable {\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n    border-collapse: collapse;\r\n\r\n}\r\n\r\ntr th, tr td {\r\n    border-top: 2px solid rgb(189, 189, 189);\r\n    border-bottom: 2px solid rgb(189, 189, 189);\r\n    font-size: 18px;\r\n    padding: 15px 0px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -26252,12 +26269,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `section.containerLogin {
     justify-content: center;
 }
 
-#formLoginCadastro {
+#formulario {
     grid-area: form;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
     gap: 40px;
 }
 
@@ -26286,7 +26303,7 @@ input{
     width: 100%;
     height: 50px;
     border: 1.5px solid rgb(187, 182, 182);
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/login.css"],"names":[],"mappings":"AAAA;IACI,aAAa;;IAEb;;UAEM;;IAEN,SAAS;IACT,qBAAqB;;IAErB,WAAW;IACX,gBAAgB;AACpB;;AAEA;IACI,sBAAsB;;IAEtB,aAAa;IACb,iBAAiB;IACjB,sBAAsB;;IAEtB,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;;IAEf,aAAa;IACb,8BAA8B;IAC9B,qBAAqB;IACrB,SAAS;AACb;;AAEA;IACI,aAAa;IACb,0BAA0B;;IAE1B,SAAS;IACT,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,kBAAkB;IAClB,kCAAkC;IAClC,kBAAkB;IAClB,yBAAyB;IACzB,eAAe;IACf,eAAe;;IAEf,oBAAoB;IACpB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,sCAAsC;AAC1C","sourcesContent":["section.containerLogin {\r\n    display: grid;\r\n\r\n    grid-template-areas: \r\n    \"tituloLogin\"\r\n    \"form\";\r\n\r\n    gap: 50px;\r\n    justify-items: center;\r\n\r\n    width: 100%;\r\n    margin: 50px 0px;\r\n}\r\n\r\n#tituloLogin {\r\n    grid-area: tituloLogin;\r\n    \r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    flex-direction: column;\r\n\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n#formLoginCadastro {\r\n    grid-area: form;\r\n\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    justify-items: center;\r\n    gap: 40px;\r\n}\r\n\r\n.loginCadastro{\r\n    display: grid;\r\n    grid-template-columns: 1fr;\r\n\r\n    gap: 30px;\r\n    width: 100%;\r\n}\r\n\r\n.btnFormulario{\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: rgb(34, 34, 230);\r\n    padding: 15px 35px;\r\n    color: rgb(236, 236, 236);\r\n    font-size: 18px;\r\n    cursor: pointer;\r\n\r\n    justify-self: center;\r\n    width: auto;\r\n}\r\n\r\ninput{\r\n    width: 100%;\r\n    height: 50px;\r\n    border: 1.5px solid rgb(187, 182, 182);\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/login.css"],"names":[],"mappings":"AAAA;IACI,aAAa;;IAEb;;UAEM;;IAEN,SAAS;IACT,qBAAqB;;IAErB,WAAW;IACX,gBAAgB;AACpB;;AAEA;IACI,sBAAsB;;IAEtB,aAAa;IACb,iBAAiB;IACjB,sBAAsB;;IAEtB,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;;IAEf,aAAa;IACb,qCAAqC;IACrC,sBAAsB;IACtB,SAAS;AACb;;AAEA;IACI,aAAa;IACb,0BAA0B;;IAE1B,SAAS;IACT,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,kBAAkB;IAClB,kCAAkC;IAClC,kBAAkB;IAClB,yBAAyB;IACzB,eAAe;IACf,eAAe;;IAEf,oBAAoB;IACpB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,sCAAsC;AAC1C","sourcesContent":["section.containerLogin {\r\n    display: grid;\r\n\r\n    grid-template-areas: \r\n    \"tituloLogin\"\r\n    \"form\";\r\n\r\n    gap: 50px;\r\n    justify-items: center;\r\n\r\n    width: 100%;\r\n    margin: 50px 0px;\r\n}\r\n\r\n#tituloLogin {\r\n    grid-area: tituloLogin;\r\n    \r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    flex-direction: column;\r\n\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n#formulario {\r\n    grid-area: form;\r\n\r\n    display: grid;\r\n    grid-template-columns: repeat(2, 1fr);\r\n    justify-items: stretch;\r\n    gap: 40px;\r\n}\r\n\r\n.loginCadastro{\r\n    display: grid;\r\n    grid-template-columns: 1fr;\r\n\r\n    gap: 30px;\r\n    width: 100%;\r\n}\r\n\r\n.btnFormulario{\r\n    border: none;\r\n    border-radius: 5px;\r\n    background-color: rgb(34, 34, 230);\r\n    padding: 15px 35px;\r\n    color: rgb(236, 236, 236);\r\n    font-size: 18px;\r\n    cursor: pointer;\r\n\r\n    justify-self: center;\r\n    width: auto;\r\n}\r\n\r\ninput{\r\n    width: 100%;\r\n    height: 50px;\r\n    border: 1.5px solid rgb(187, 182, 182);\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

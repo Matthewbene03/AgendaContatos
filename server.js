@@ -41,7 +41,7 @@ app.use(express.static(path.resolve(__dirname, "public"))); //serve para ler dad
 
 app.use(csrf());
 
-//app.use(meuMiddlewares); //Serve para usar o arquivo de middlewres. 
+app.use(meuMiddlewares); //Serve para usar o arquivo de middlewres. 
 app.use(checkCsrfError); //Serve para usar o arquivo de middlewres. 
 app.use(csrfMiddeleware); //Serve para usar o arquivo de middlewres. 
 app.use(router); //Serve para usar o arquivo de rotas. 

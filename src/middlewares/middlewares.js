@@ -1,5 +1,6 @@
 module.exports.meuMiddlewares = (req, res, next) =>{
-    console.log("Esse é o middleware padrão!");
+    res.locals.errors = req.flash("error");
+    res.locals.success = req.flash("success");
     next();
 };
 

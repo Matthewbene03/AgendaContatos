@@ -13,6 +13,8 @@ router.post("/", homeController.tratarFormulario);
 
 //Rotas de login
 router.get("/login/", loginController.paginaLogin);
+router.post("/login/register", loginController.cadastrar);
+router.post("/login/login", loginController.entrar);
 
 
 module.exports = router;

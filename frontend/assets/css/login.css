@@ -23,12 +23,12 @@ section.containerLogin {
     justify-content: center;
 }
 
-#formLoginCadastro {
+#formulario {
     grid-area: form;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
     gap: 40px;
 }
 

@@ -1,41 +1,49 @@
 <%- include("./includes/head.ejs"); %>
     <%- include("./includes/navMenu.ejs"); %>
-        <section class="containerLogin">
-            <!--Estrutura do titulo da pagina-->
+    <section class="containerLogin">
+        <!--Estrutura do titulo da pagina-->
             <div id="tituloLogin">
                 <h2>Criar Conta ou Entrar</h2>
                 <p>Faça login ou crie sua conta abaixo</p>
             </div>
+            
+            <%- include("./includes/msgError.ejs"); %>
 
             <!--Estrutura do formulário da pagina-->
-            <form action="/login/register" id="formLoginCadastro" method="post">
-                <input type="hidden" name="_csrf" value=<%=csrfToken %>>
-                <div id="div_cadastro" class="loginCadastro">
-                    <h3>Faça seu cadastro</h3>
-                    <p>Se você ainda não tem conta, preencha o formulário abaixo:</p>
-                    <div id="div_emailCadastro">
-                        <label for="emailCadastro">Seu e-mail</label> <br>
-                        <input type="email" name="emailCadastro" id="emailCadastro">
+            <div id="formulario">
+                <form action="/login/register" id="formCadastro" method="post">
+                    <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+                    <div id="div_cadastro" class="loginCadastro">
+                        <h3>Faça seu cadastro</h3>
+                        <p>Se você ainda não tem conta, preencha o formulário abaixo:</p>
+                        <div id="div_emailCadastro">
+                            <label for="emailCadastro">Seu e-mail</label> <br>
+                            <input type="email" name="email" id="emailCadastro">
+                        </div>
+                        <div id="div_senhaCadastro">
+                            <label for="senhaCadastro">Sua senha</label> <br>
+                            <input type="password" name="senha" id="senhaCadastro">
+                        </div>
+                        <button class="btnFormulario" type="submit">Criar conta</button>
                     </div>
-                    <div id="div_senhaCadastro">
-                        <label for="senhaCadastro">Sua senha</label> <br>
-                        <input type="password" name="senhaCadastro" id="senhaCadastro">
+                </form>
+
+                <form action="/login/login" id="formLogin" method="post">
+                    <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+                    <div id="div_login" class="loginCadastro">
+                        <h3>Faça seu login</h3>
+                        <p>Se você já tem uma conta, faça o seu login abaixo:</p>
+                        <div id="div_emailLogin">
+                            <label for="emailLogin">Seu e-mail</label> <br>
+                            <input type="email" name="email" id="emailLogin">
+                        </div>
+                        <div id="div_senhaLogin">
+                            <label for="senhaLogin">Sua senha</label> <br>
+                            <input type="password" name="senha" id="senhaLogin">
+                        </div>
+                        <button class="btnFormulario" type="submit">Entrar</button>
                     </div>
-                    <button class="btnFormulario" type="submit">Criar conta</button>
-                </div>
-                <div id="div_login" class="loginCadastro">
-                    <h3>Faça seu login</h3>
-                    <p>Se você já tem uma conta, faça o seu login abaixo:</p>
-                    <div id="div_emailLogin">
-                        <label for="emailLogin">Seu e-mail</label> <br>
-                        <input type="email" name="emailLogin" id="emailLogin">
-                    </div>
-                    <div id="div_senhaLogin">
-                        <label for="senhaLogin">Sua senha</label> <br>
-                        <input type="password" name="senhaLogin" id="senhaLogin">
-                    </div>
-                    <button class="btnFormulario" type="submit">Entrar</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
         <%- include("./includes/footer.ejs"); %>
