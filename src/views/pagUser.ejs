@@ -1,0 +1,12 @@
+<%- include("./includes/head.ejs"); %>
+    <%- include("./includes/navMenu.ejs"); %>
+    <section class="containerLogin">
+        <!--Estrutura do titulo da pagina-->
+            <div id="tituloLogin">
+                <h2>Olá <%= user.email %> </h2>
+                <p>Você precisa sair para criar outra conta.</p>
+            </div>
+            
+            <%- include("./includes/msgError.ejs"); %>
+        </section>
+        <%- include("./includes/footer.ejs"); %>

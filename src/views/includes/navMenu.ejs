@@ -3,7 +3,14 @@
         <h1>MyAgenda</h1>
     </div>
     <div class="links margin5PorcLados">
-        <a href="/login">Entrar</a>
+        
+        <a href="/contatos">Cadastrar contatos</a>
+
+        <% if(user) { %>
+            <a href="/login/sair">Sair</a>
+        <% } else { %>
+            <a href="/login">Entrar</a>
+        <% } %>
     </div>
 </nav>
 

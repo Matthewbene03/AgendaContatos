@@ -15,6 +15,9 @@ router.post("/", homeController.tratarFormulario);
 router.get("/login/", loginController.paginaLogin);
 router.post("/login/register", loginController.cadastrar);
 router.post("/login/login", loginController.entrar);
+router.get("/login/sair", loginController.sair);
 
+//Rotas de contatos
+router.get("/login/", loginController.paginaLogin);
 
 module.exports = router;
