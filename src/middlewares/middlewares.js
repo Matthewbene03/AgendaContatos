@@ -5,6 +5,16 @@ module.exports.meuMiddlewares = (req, res, next) =>{
     next();
 };
 
+module.exports.loginRequired = (req, res, next) =>{
+    if(!req.session.user){
+        req.flash("error", "Você precisa fazer login!!!");
+        req.session.save(() => res.redirect("/"));
+        return;
+    }
+
+    next();
+};
+
 module.exports.checkCsrfError = (err, req, res, next) =>{ //Criando middlewares para verificar error de csrf
     if(err){
         return res.render("404.ejs");

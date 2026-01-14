@@ -1,12 +1,14 @@
 section.containerLogin {
     display: grid;
 
-    grid-template-areas: 
-    "tituloLogin"
-    "form";
+    grid-template-areas:
+        "tituloLogin"
+        "msg"
+        "form";
+    grid-template-columns: 1fr;
 
     gap: 50px;
-    justify-items: center;
+    justify-items: stretch;
 
     width: 100%;
     margin: 50px 0px;
@@ -14,7 +16,8 @@ section.containerLogin {
 
 #tituloLogin {
     grid-area: tituloLogin;
-    
+    justify-self: center;
+
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -23,8 +26,14 @@ section.containerLogin {
     justify-content: center;
 }
 
+#div_error, #div_success{
+    grid-area: msg;
+    width: 100%;
+}
+
 #formulario {
     grid-area: form;
+    justify-self: center;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,7 +41,7 @@ section.containerLogin {
     gap: 40px;
 }
 
-.loginCadastro{
+.loginCadastro {
     display: grid;
     grid-template-columns: 1fr;
 
@@ -40,7 +49,9 @@ section.containerLogin {
     width: 100%;
 }
 
-.btnFormulario{
+.btnFormulario {
+    justify-self: center;
+
     border: none;
     border-radius: 5px;
     background-color: rgb(34, 34, 230);
@@ -53,7 +64,7 @@ section.containerLogin {
     width: auto;
 }
 
-input{
+input {
     width: 100%;
     height: 50px;
     border: 1.5px solid rgb(187, 182, 182);

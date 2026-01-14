@@ -26,51 +26,6 @@ div.conteudoAgenda h2#agenda{
     font-size: 40px;
 }
 
-/*Style do error*/
-
-div.div_error {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    align-items: center;
-    justify-content: left;
-
-    background-color: rgb(255, 149, 149);
-    /*border: 2px solid rgb(255, 149, 149);*/
-    border-radius: 10px;
-    text-align: center;
-    margin: 0px 25%;
-    padding-left: 10px;
-    height: 70px;
-}
-
-div.div_error p {
-    color: rgb(70, 0, 0);
-}
-
-/*Style do success*/
-
-div.div_success {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    align-items: center;
-    justify-content: left;
-
-    background-color: rgb(57, 180, 19);
-    border-radius: 10px;
-    text-align: center;
-    margin: 0px 25%;
-    padding-left: 10px;
-    height: 70px;
-}
-
-div.div_success p {
-    color: rgb(17, 91, 2);
-}
-
 /*Style da tabela*/
 table {
     text-align: center;

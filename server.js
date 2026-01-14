@@ -19,7 +19,7 @@ const sessionOptions = session({ //Cria o middleware de sessão do Express usand
     resave: false, // Evita salvar a sessão no banco se nada mudou.
     saveUninitialized: false, // Não cria sessão vazia para usuários que não usaram sessão ainda.
     cookie: { // Configurações do cookie da sessão.
-        maxAge: 1000 * 60 * 5, //Cinco minutos -> Tempo de vida do cookie (em ms).
+        maxAge: 1000 * 60 * 60 * 30, //Cinco minutos -> Tempo de vida do cookie (em ms).
         httpOnly: true // Impede acesso ao cookie via JavaScript do navegador.
     }
 });

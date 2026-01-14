@@ -6,4 +6,6 @@ import "./assets/css/class.css";
 import "./assets/css/tag.css";
 import "./assets/css/index.css";
 import "./assets/css/login.css";
+import "./assets/css/msgError.css";
+import "./assets/css/contato.css";
 import "./assets/css/error404.css";
