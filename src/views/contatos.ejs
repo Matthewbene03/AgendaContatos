@@ -1,0 +1,40 @@
+<%- include("./includes/head.ejs"); %>
+    <%- include("./includes/navMenu.ejs"); %>
+        <section class="containerContato">
+            <!--Estrutura do titulo da pagina-->
+            <div id="tituloContato">
+                <h2>Contato</h2>
+                <p>Cadastrar ou editar um contato</p>
+            </div>
+
+            <%- include("./includes/msgError.ejs"); %>
+
+                <!--Estrutura do formulário da pagina-->
+                <% if(contato._id) { %>
+                    <form action="/contatos/edit/<%= contato._id %>" id="formCadastroContato" method="post">
+                        <% } else { %>
+                            <form action="/contatos/register" id="formCadastroContato" method="post">
+                                <% } %>
+                                    <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+                                    <div id="div_nome">
+                                        <label for="nomeContato">Nome</label> <br>
+                                        <input value="<%= contato.nome %>" type="text" name="nome" id="nomeContato">
+                                    </div>
+                                    <div id="div_sobrenome">
+                                        <label for="sobrenomeContato">Sobrenome</label> <br>
+                                        <input value="<%= contato.sobrenome %>" type="text" name="sobrenome"
+                                            id="sobrenomeContato">
+                                    </div>
+                                    <div id="div_email">
+                                        <label for="emailContato">Email</label> <br>
+                                        <input value="<%= contato.email %>" type="email" name="email" id="emailContato">
+                                    </div>
+                                    <div id="div_telefone">
+                                        <label for="senhaContato">Telefone</label> <br>
+                                        <input value="<%= contato.telefone %>" type="tel" name="telefone"
+                                            id="senhaContato">
+                                    </div>
+                                    <button class="btnFormulario" type="submit">Salvar</button>
+                            </form>
+        </section>
+        <%- include("./includes/footer.ejs"); %>
