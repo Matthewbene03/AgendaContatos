@@ -26331,21 +26331,19 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/*Style do container principal*/
 section.container {
-
     display: grid;
 
     grid-template-columns: 1fr;
     gap: 30px;
-
     width: 100%;
     margin: 50px 0px;
 }
 
 /*Style do titulo da agenda*/
 div.conteudoAgenda {
-
     text-align: center;
-    margin: 0px 25%;
+
+    margin: 0px 10%;
 
     display: flex;
     flex-wrap: nowrap;
@@ -26353,24 +26351,52 @@ div.conteudoAgenda {
     justify-content: center;
 }
 
-div.conteudoAgenda h2#agenda{
+div.conteudoAgenda h2#agenda {
     font-size: 40px;
+}
+
+/*Paragrafo de aviso que não tem contato cadastrado*/
+
+p#nãoTemContato{
+    text-align: center;
+    color: red;
+    font-size: 20px;
 }
 
 /*Style da tabela*/
 table {
     text-align: center;
-    margin: 0px 25%;
     border-collapse: collapse;
+    align-self: center;
 
+    margin: 0px 10%;
 }
 
-tr th, tr td {
+tr th,
+tr td {
     border-top: 2px solid rgb(189, 189, 189);
     border-bottom: 2px solid rgb(189, 189, 189);
     font-size: 18px;
-    padding: 15px 0px;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA,+BAA+B;AAC/B;;IAEI,aAAa;;IAEb,0BAA0B;IAC1B,SAAS;;IAET,WAAW;IACX,gBAAgB;AACpB;;AAEA,4BAA4B;AAC5B;;IAEI,kBAAkB;IAClB,eAAe;;IAEf,aAAa;IACb,iBAAiB;IACjB,sBAAsB;IACtB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;AACnB;;AAEA,kBAAkB;AAClB;IACI,kBAAkB;IAClB,eAAe;IACf,yBAAyB;;AAE7B;;AAEA;IACI,wCAAwC;IACxC,2CAA2C;IAC3C,eAAe;IACf,iBAAiB;AACrB","sourcesContent":["/*Style do container principal*/\r\nsection.container {\r\n\r\n    display: grid;\r\n\r\n    grid-template-columns: 1fr;\r\n    gap: 30px;\r\n\r\n    width: 100%;\r\n    margin: 50px 0px;\r\n}\r\n\r\n/*Style do titulo da agenda*/\r\ndiv.conteudoAgenda {\r\n\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n\r\ndiv.conteudoAgenda h2#agenda{\r\n    font-size: 40px;\r\n}\r\n\r\n/*Style da tabela*/\r\ntable {\r\n    text-align: center;\r\n    margin: 0px 25%;\r\n    border-collapse: collapse;\r\n\r\n}\r\n\r\ntr th, tr td {\r\n    border-top: 2px solid rgb(189, 189, 189);\r\n    border-bottom: 2px solid rgb(189, 189, 189);\r\n    font-size: 18px;\r\n    padding: 15px 0px;\r\n}"],"sourceRoot":""}]);
+    padding: 15px;
+}
+
+.linkEditar {
+    color: blue;
+    transition: none;
+}
+
+.linkEditar:hover {
+    border-bottom: none;
+}
+
+.linkDeletar {
+    color: red;
+    transition: none;
+}
+
+.linkDeletar:hover {
+    border-bottom: none;
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA,+BAA+B;AAC/B;IACI,aAAa;;IAEb,0BAA0B;IAC1B,SAAS;IACT,WAAW;IACX,gBAAgB;AACpB;;AAEA,4BAA4B;AAC5B;IACI,kBAAkB;;IAElB,eAAe;;IAEf,aAAa;IACb,iBAAiB;IACjB,sBAAsB;IACtB,uBAAuB;AAC3B;;AAEA;IACI,eAAe;AACnB;;AAEA,oDAAoD;;AAEpD;IACI,kBAAkB;IAClB,UAAU;IACV,eAAe;AACnB;;AAEA,kBAAkB;AAClB;IACI,kBAAkB;IAClB,yBAAyB;IACzB,kBAAkB;;IAElB,eAAe;AACnB;;AAEA;;IAEI,wCAAwC;IACxC,2CAA2C;IAC3C,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,UAAU;IACV,gBAAgB;AACpB;;AAEA;IACI,mBAAmB;AACvB","sourcesContent":["/*Style do container principal*/\r\nsection.container {\r\n    display: grid;\r\n\r\n    grid-template-columns: 1fr;\r\n    gap: 30px;\r\n    width: 100%;\r\n    margin: 50px 0px;\r\n}\r\n\r\n/*Style do titulo da agenda*/\r\ndiv.conteudoAgenda {\r\n    text-align: center;\r\n\r\n    margin: 0px 10%;\r\n\r\n    display: flex;\r\n    flex-wrap: nowrap;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n}\r\n\r\ndiv.conteudoAgenda h2#agenda {\r\n    font-size: 40px;\r\n}\r\n\r\n/*Paragrafo de aviso que não tem contato cadastrado*/\r\n\r\np#nãoTemContato{\r\n    text-align: center;\r\n    color: red;\r\n    font-size: 20px;\r\n}\r\n\r\n/*Style da tabela*/\r\ntable {\r\n    text-align: center;\r\n    border-collapse: collapse;\r\n    align-self: center;\r\n\r\n    margin: 0px 10%;\r\n}\r\n\r\ntr th,\r\ntr td {\r\n    border-top: 2px solid rgb(189, 189, 189);\r\n    border-bottom: 2px solid rgb(189, 189, 189);\r\n    font-size: 18px;\r\n    padding: 15px;\r\n}\r\n\r\n.linkEditar {\r\n    color: blue;\r\n    transition: none;\r\n}\r\n\r\n.linkEditar:hover {\r\n    border-bottom: none;\r\n}\r\n\r\n.linkDeletar {\r\n    color: red;\r\n    transition: none;\r\n}\r\n\r\n.linkDeletar:hover {\r\n    border-bottom: none;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -26582,6 +26608,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
   height: 80px;
 }
 
+#linkMyAgenda{
+  transition: none;
+}
+
+#linkMyAgenda:hover{
+    border-bottom: none;
+}
+
 div.links {
   display: flex;
   flex-direction: row;
@@ -26589,7 +26623,8 @@ div.links {
 
   justify-content: right;
   align-items: center;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/navMenu.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,oCAAoC;;EAEpC,aAAa;;EAEb,8BAA8B;EAC9B,uBAAuB;;EAEvB,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,iBAAiB;;EAEjB,sBAAsB;EACtB,mBAAmB;AACrB","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.navMenu {\n  background-color: rgb(119, 119, 119);\n\n  display: grid;\n\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 1fr;\n\n  align-items: center;\n  height: 80px;\n}\n\ndiv.links {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n\n  justify-content: right;\n  align-items: center;\n}"],"sourceRoot":""}]);
+}
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/navMenu.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,oCAAoC;;EAEpC,aAAa;;EAEb,8BAA8B;EAC9B,uBAAuB;;EAEvB,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,iBAAiB;;EAEjB,sBAAsB;EACtB,mBAAmB;AACrB","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.navMenu {\n  background-color: rgb(119, 119, 119);\n\n  display: grid;\n\n  grid-template-columns: 1fr 1fr;\n  grid-template-rows: 1fr;\n\n  align-items: center;\n  height: 80px;\n}\n\n#linkMyAgenda{\n  transition: none;\n}\n\n#linkMyAgenda:hover{\n    border-bottom: none;\n}\n\ndiv.links {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n\n  justify-content: right;\n  align-items: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

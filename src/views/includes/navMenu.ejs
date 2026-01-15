@@ -1,16 +1,15 @@
 <nav class="navMenu">
     <div class="titulo margin5PorcLados">
-        <h1>MyAgenda</h1>
+        <a id="linkMyAgenda" href="/"><h1>MyAgenda</h1></a>
     </div>
     <div class="links margin5PorcLados">
-        
+
         <a href="/contatos">Cadastrar contatos</a>
 
         <% if(user) { %>
             <a href="/login/sair">Sair</a>
-        <% } else { %>
-            <a href="/login">Entrar</a>
-        <% } %>
+            <% } else { %>
+                <a href="/login">Entrar</a>
+                <% } %>
     </div>
 </nav>
-

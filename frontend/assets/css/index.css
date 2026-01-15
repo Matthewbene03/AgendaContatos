@@ -1,20 +1,18 @@
 /*Style do container principal*/
 section.container {
-
     display: grid;
 
     grid-template-columns: 1fr;
     gap: 30px;
-
     width: 100%;
     margin: 50px 0px;
 }
 
 /*Style do titulo da agenda*/
 div.conteudoAgenda {
-
     text-align: center;
-    margin: 0px 25%;
+
+    margin: 0px 10%;
 
     display: flex;
     flex-wrap: nowrap;
@@ -22,21 +20,49 @@ div.conteudoAgenda {
     justify-content: center;
 }
 
-div.conteudoAgenda h2#agenda{
+div.conteudoAgenda h2#agenda {
     font-size: 40px;
+}
+
+/*Paragrafo de aviso que não tem contato cadastrado*/
+
+p#nãoTemContato{
+    text-align: center;
+    color: red;
+    font-size: 20px;
 }
 
 /*Style da tabela*/
 table {
     text-align: center;
-    margin: 0px 25%;
     border-collapse: collapse;
+    align-self: center;
 
+    margin: 0px 10%;
 }
 
-tr th, tr td {
+tr th,
+tr td {
     border-top: 2px solid rgb(189, 189, 189);
     border-bottom: 2px solid rgb(189, 189, 189);
     font-size: 18px;
-    padding: 15px 0px;
+    padding: 15px;
+}
+
+.linkEditar {
+    color: blue;
+    transition: none;
+}
+
+.linkEditar:hover {
+    border-bottom: none;
+}
+
+.linkDeletar {
+    color: red;
+    transition: none;
+}
+
+.linkDeletar:hover {
+    border-bottom: none;
 }

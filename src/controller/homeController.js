@@ -1,5 +1,8 @@
-module.exports.paginaPrincipal = (req, res) =>{
-    res.render("index.ejs");
+const Contato = require("../models/contatosModels");
+
+module.exports.paginaPrincipal = async function (req, res) {
+    const contatos = await Contato.buscarTodosContatos();
+    res.render("index.ejs", {contatos});
 };
 
 module.exports.tratarFormulario = (req, res) =>{

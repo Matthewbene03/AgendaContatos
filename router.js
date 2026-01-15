@@ -23,5 +23,8 @@ router.get("/login/sair", loginController.sair);
 router.get("/contatos", loginRequired, contatosController.paginaInicial);
 router.post("/contatos/register", contatosController.criarContatos);
 router.get("/contatos/:id", loginRequired, contatosController.editarContatos);
+router.post("/contatos/edit/:id", loginRequired, contatosController.editar);
+router.get("/contatos/delete/:id", loginRequired, contatosController.deletar);
+
 
 module.exports = router;

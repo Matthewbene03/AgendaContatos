@@ -16,6 +16,14 @@
   height: 80px;
 }
 
+#linkMyAgenda{
+  transition: none;
+}
+
+#linkMyAgenda:hover{
+    border-bottom: none;
+}
+
 div.links {
   display: flex;
   flex-direction: row;
